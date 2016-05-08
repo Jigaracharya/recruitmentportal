@@ -1,0 +1,109 @@
+﻿<html>
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>loggedintopmenu}}
+    <div class="container">
+        <h1>Add Resume</h1>
+        <a href="/account/resume/view" >View All</a>
+        <div class="row">
+            <form action="#" role="form" id="form">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Personal Information</div>
+                    <div class="panel-body">
+
+                        <div id="step-1">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">
+                                    First Name <span class="symbol required"></span>
+                                </label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                  
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">
+                                    Last Name <span class="symbol required"></span>
+                                </label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">
+                                    Email <span class="symbol required"></span>
+                                </label>
+                                <div class="col-sm-7">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">
+                                    Resume Title <span class="symbol required"></span>
+                                </label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="resumename" name="resumename" placeholder="Resume Title">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="panel-heading">Resume</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label class="col-sm-4 control-label">
+                                    Attach Resume <span class="symbol required"></span>
+                                </label>
+                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                    <div class="input-group">
+                                        <div class="input-group-btn">
+                                            <div class="btn btn-light-grey btn-file">
+                                                <input type="file" class="file-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-heading">Cover Letter</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label class="col-sm-4 control-label">
+                                    Upload Cover Letter <span class="symbol required"></span>
+                                </label>
+                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                    <div class="input-group">
+                                        <div class="input-group-btn">
+                                            <div class="btn btn-light-grey btn-file">
+                                                <input type="file" class="file-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+
+        <p class="text-left">
+            <button type="submit" class="btn btn-success btn-lg">Save</button>
+        </p>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

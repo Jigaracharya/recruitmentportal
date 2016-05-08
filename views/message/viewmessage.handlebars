@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>loggedintopmenu}}
+    <div class="container">
+        <h1>View Messages</h1>
+        <a href="/account/message/new" class="btn btn-success btn-lg">Compose</a>
+       
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Subject</th>
+                    <th>Subject</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>jigar@gmail.com</td>
+                    <td>sanjay@gmail.com</td>
+                    <td>The subject goes here!</td>
+                    <td>8 Sep 2013, 08:46 PM</td>
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

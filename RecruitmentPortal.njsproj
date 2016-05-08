@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>RecruitmentPortal</Name>
+    <RootNamespace>RecruitmentPortal</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>eb1c1b30-e4a0-4ebd-ae74-0a7cfb73bb2e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>C:\Jigar\Jigar\Companies\Globalwise\RecruitmentPortal\RecruitmentPortal</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>5001</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="routes\routes.js" />
+    <Content Include=".gitignore" />
+    <Content Include="LICENSE" />
+    <Content Include="package.json" />
+    <Content Include="Procfile" />
+    <Content Include="public\styles\main.css" />
+    <Content Include="public\styles\style.css" />
+    <Content Include="README.md" />
+    <Content Include="views\aboutus.handlebars" />
+    <Content Include="views\contactus.handlebars" />
+    <Content Include="views\contact\managecontacts.handlebars" />
+    <Content Include="views\hire.handlebars" />
+    <Content Include="views\jobposting\newjobposting.handlebars" />
+    <Content Include="views\jobposting\viewjobposting.handlebars" />
+    <Content Include="views\login.handlebars" />
+    <Content Include="views\message\newmessage.handlebars" />
+    <Content Include="views\message\viewmessage.handlebars" />
+    <Content Include="views\notification\newnotification.handlebars" />
+    <Content Include="views\notification\viewnotification.handlebars" />
+    <Content Include="views\partials\footer.handlebars" />
+    <Content Include="views\partials\header.handlebars" />
+    <Content Include="views\index.handlebars" />
+    <Content Include="views\partials\loggedintopmenu.handlebars" />
+    <Content Include="views\partials\newresume.handlebars" />
+    <Content Include="views\partials\topmenu.handlebars" />
+    <Content Include="views\profile\personalprofile.handlebars" />
+    <Content Include="views\profile\recruiterprofile.handlebars" />
+    <Content Include="views\refer.handlebars" />
+    <Content Include="views\resume\newresume.handlebars" />
+    <Content Include="views\resume\viewresume.handlebars" />
+    <Content Include="views\signup.handlebars" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\scripts\" />
+    <Folder Include="public\styles\" />
+    <Folder Include="views\" />
+    <Folder Include="public\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\jobposting\" />
+    <Folder Include="views\contact\" />
+    <Folder Include="views\message\" />
+    <Folder Include="views\profile\" />
+    <Folder Include="views\referral\" />
+    <Folder Include="views\report\" />
+    <Folder Include="views\notification\" />
+    <Folder Include="views\resume\" />
+    <Folder Include="views\partials\" />
+    <Folder Include="views\resume\partials\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

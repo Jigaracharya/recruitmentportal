@@ -1,0 +1,18 @@
+{
+  "name": "RecruitmentPortal",
+  "version": "1.0.0",
+  "description": "Recruitment Portal",
+  "main": "app.js",
+  "author": {
+    "name": "jigar",
+    "email": "jigar.acharya@gmail.com"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "chalk": "^1.1.3",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.13.0"
+  }
+}

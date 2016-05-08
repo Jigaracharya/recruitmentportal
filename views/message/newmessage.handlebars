@@ -1,0 +1,60 @@
+﻿<html>
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>loggedintopmenu}} 
+    <div class="container-fluid">
+        <h1>New Message</h1>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    From Email <span class="symbol required"></span>
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="fromemail" name="fromemail" placeholder="From Email">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    To Email <span class="symbol required"></span>
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="toemail" name="toemail" placeholder="To Email">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    Subject <span class="symbol required"></span>
+                </label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    Subject Body <span class="symbol required"></span>
+                </label>
+                <div class="col-sm-4">
+                    <textarea class="form-control" rows="5" id="subject"></textarea>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <p class="text-left">
+            <button type="submit" class="btn btn-success btn-lg">Send</button>
+        </p>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

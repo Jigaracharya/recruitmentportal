@@ -1,0 +1,42 @@
+﻿<html>
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>loggedintopmenu}}
+    <div class="container">
+        <h1>View Resume</h1>
+        <a href="/account/resume/new" class="btn btn-success btn-lg">Add Resume</a>
+        <!-- Modal -->
+        
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jigar</td>
+                    <td>Acharya</td>
+                    <td>jigaracharya@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sanjay</td>
+                    <td>Mehta</td>
+                    <td>sanjay@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

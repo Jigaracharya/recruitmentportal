@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>topmenu}}   <br><br><br>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Recruitment Portal</h1>
+            <p>EJS: Simple syntax: JavaScript code in simple, straightforward scriptlet tags. Just write JavaScript that emits the HTML you want, and get your shit done. Don't waste time and attention figuring out arcane new syntax because 'elegance' � or how to preprocess your data so it will actually render right.</p>
+            <p><a href="\aboutus" target="_blank" class="btn btn-success btn-lg">Learn More &raquo;</a></p>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <h2>REFER</h2>
+                <p>Jade is compatible with Express.js out of the box (in fact, it�s the default choice), so to use Jade with Express.js, you just need to install a template engine module jade  and provide an extension to Express.js via the view engine setting).</p>
+                <p><a href="\refer" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-xs-3">
+                <h2>HIRE</h2>
+                <p>Handlebars provides the power necessary to let you build semantic templates effectively with no frustration. Handlebars is largely compatible with Mustache templates. In most cases it is possible to swap out Mustache with Handlebars and continue using your current templates. Complete details can be foun</p>
+                <p><a href="\hire" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-xs-3 ">
+                <h1 align="left" class="margin-base-vertical">Login</h1>
+                <form class="margin-base-vertical" method="post" action="/loginAuth">
+                    <p class="input-group ">
+                        <span class="input-group-addon"><span class="icon-envelope"></span></span>
+                        <input type="text" required class="form-control input-lg" name="loginName" placeholder="Login Name" />
+                    </p>
+                    <p class="input-group ">
+                        <span class="input-group-addon"><span class="icon-key"></span></span>
+                        <input type="password" required class="form-control input-lg" name="password" placeholder="Password" />
+                    </p>
+                    <br />
+                    <p class="text-left">
+                        <button type="submit" class="btn btn-success btn-lg">Log In</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    {{>footer}}
+</body>
+</html>
