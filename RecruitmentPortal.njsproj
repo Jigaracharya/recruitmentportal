@@ -31,11 +31,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\scripts\bootstrap.min.js" />
+    <Compile Include="public\scripts\jquery.min.js" />
     <Compile Include="routes\routes.js" />
     <Content Include=".gitignore" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
     <Content Include="Procfile" />
+    <Content Include="public\styles\bootstrap-theme.min.css" />
+    <Content Include="public\styles\bootstrap.min.css" />
     <Content Include="public\styles\main.css" />
     <Content Include="public\styles\style.css" />
     <Content Include="README.md" />
