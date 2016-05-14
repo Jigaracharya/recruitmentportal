@@ -26,6 +26,7 @@ app.get('/hire', routes.hirePageHandler);
 app.get('/aboutus', routes.aboutusPageHandler);
 app.get('/contactus', routes.contactusPageHandler);
 app.get('/signup', routes.signupPageHandler);
+app.post('/signup', routes.signupSavePageHandler);
 app.get('/account/', routes.accountHomePageHandler);
 app.get('/account/index', routes.accountHomePageHandler);
 app.get('/account/contact/manage', routes.manageContactPageHandler);
@@ -44,6 +45,15 @@ app.get('/account/reports/report2', routes.report2PageHandler);
 app.get('/account/reports/report3', routes.report3PageHandler);
 app.get('/account/profile', routes.profilePageHandler);
 app.get('/account/recruiterprofile', routes.recruitmentProfilePageHandler);
+
+app.get('/account/assignmanager', routes.assignManagerPageHandler);
+app.get('/account/newaccountmanager', routes.newAccountManagerPageHandler);
+app.get('/account/viewaccountmanager', routes.viewAccountManagerPageHandler);
+app.get('/account/newclient', routes.newClientPageHandler);
+app.get('/account/viewclients', routes.viewclientsPageHandler);
+app.get('/account/newrecruiter', routes.newRecruiterPageHandler);
+app.get('/account/viewrecruiters', routes.viewRecruitersPageHandler);
+app.get('/account/pendingapprovals', routes.pendingApprovalPageHandler);
 
 ////error handling
 //app.use("*", function (req, res) {

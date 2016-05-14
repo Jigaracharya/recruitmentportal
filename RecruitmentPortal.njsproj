@@ -44,6 +44,15 @@
     <Content Include="public\styles\style.css" />
     <Content Include="README.md" />
     <Content Include="views\aboutus.handlebars" />
+    <Content Include="views\account\assignmanager.handlebars" />
+    <Content Include="views\account\newaccountmanager.handlebars" />
+    <Content Include="views\account\newclient.handlebars" />
+    <Content Include="views\account\newrecruiter.handlebars" />
+    <Content Include="views\account\pendingapprovals.handlebars" />
+    <Content Include="views\account\viewaccountmanager.handlebars" />
+    <Content Include="views\account\viewassignmanager.handlebars" />
+    <Content Include="views\account\viewclients.handlebars" />
+    <Content Include="views\account\viewrecruiters.handlebars" />
     <Content Include="views\contactus.handlebars" />
     <Content Include="views\contact\managecontacts.handlebars" />
     <Content Include="views\hire.handlebars" />
@@ -63,6 +72,11 @@
     <Content Include="views\profile\personalprofile.handlebars" />
     <Content Include="views\profile\recruiterprofile.handlebars" />
     <Content Include="views\refer.handlebars" />
+    <Content Include="views\referral\index.handlebars" />
+    <Content Include="views\report\index.handlebars" />
+    <Content Include="views\report\report1.handlebars" />
+    <Content Include="views\report\report2.handlebars" />
+    <Content Include="views\report\report3.html" />
     <Content Include="views\resume\newresume.handlebars" />
     <Content Include="views\resume\viewresume.handlebars" />
     <Content Include="views\signup.handlebars" />
@@ -76,6 +90,7 @@
     <Folder Include="views\jobposting\" />
     <Folder Include="views\contact\" />
     <Folder Include="views\message\" />
+    <Folder Include="views\account\" />
     <Folder Include="views\profile\" />
     <Folder Include="views\referral\" />
     <Folder Include="views\report\" />

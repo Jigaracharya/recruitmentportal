@@ -10,12 +10,68 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="/account/contact/manage">Manage Contacts</a></li>
-                <li><a href="/account/jobposting/view">Job Posting</a></li>
+                <li><a href="/account/jobposting/view">Jobs</a></li>
                 <li><a href="/account/resume/view">Manage Resume</a></li>
                 <li><a href="/account/message/view">Message</a></li>
                 <li><a href="/account/notification/view">Notification </a></li>
-                <li><a href="/account/referral">Referral Earnings </a></li>
+                {{#if isNormal}}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/profile"><span class="glyphicon glyphicon-user"></span>  Edit Profile </a></li>
+                        <li><a href="/account/contact/manage">Manage Contacts</a></li>
+                        <li><a href="/account/referral">Referral Earnings </a></li>
+                    </ul>
+                </li>
+                {{/if}}
+                {{#if isRecruiter}}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/recruiterprofile"><span class="glyphicon glyphicon-user"></span>  Edit Profile </a></li>
+                        <li><a href="/account/contact/manage">Manage Contacts</a></li>
+                        <li><a href="/account/referral">Referral Earnings </a></li>
+                    </ul>
+                </li>
+                {{/if}}
+                {{#if isAccountManager}}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/profile"><span class="glyphicon glyphicon-user"></span>  Edit Profile </a></li>
+                        <li><a href="/account/contact/manage">Manage Contacts</a></li>
+                        <li><a href="/account/viewclients">View My Clients</a></li>
+                        <li><a href="/account/viewrecruiters">View Assigned Recuriters</a></li>
+                        <li><a href="/account/referral">Referral Earnings </a></li>
+                    </ul>
+                </li>
+                {{/if}}
+                {{#if isClient}}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/recruiterprofile"><span class="glyphicon glyphicon-user"></span> Edit Profile </a></li>
+                        <li><a href="/account/contact/manage">Manage Contacts</a></li>
+                        <li><a href="/account/jobposting/new">New Job Posting</a></li>
+                        <li><a href="/account/jobposting/view">View Job Posting</a></li>
+                        <li><a href="/account/resume/view">View Resume</a></li>
+                    </ul>
+                </li>
+                {{/if}}
+                {{#if isAdmin}}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/account/admin/dashboard">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/contact/manage">Manage Contacts</a></li>
+                        <li><a href="/account/newrecruiter">Manage Recruiters</a></li>
+                        <li><a href="/account/newclient">Manage Clients</a></li>
+                        <li><a href="/account/newaccountmanager">Manage Account Managers</a></li>
+                        <li><a href="/account/pendingapprovals">Pending Approvals</a></li>
+                        <li><a href="/account/jobposting/new">New Job Posting</a></li>
+                    </ul>
+                </li>
+                {{/if}}
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="/account/reports">Reports <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -24,17 +80,23 @@
                         <li><a href="/account/reports/report3">Report 3</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="/account/admin/dashboard">Administrator <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/account/jobposting/new">New Job Posting</a></li>
-                        <li><a href="#">Assign Account Manager</a></li>                       
-                    </ul>
-                </li>
             </ul>
+            <p>
+
+            </p>
+
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/account/profile"><span class="glyphicon glyphicon-user"></span> Jigar Acharya</a></li>
+                {{#if isAdmin}}
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>  {{userContext.loginName}} </a></li>
                 <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                {{else}}
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>  {{userContext.loginName}} </a></li>
+                <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                {{/if}}
+
+
+
+
             </ul>
         </div>
     </div>

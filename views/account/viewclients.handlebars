@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+    {{>header}}
+</head>
+<body>
+    {{>loggedintopmenu}}
+    <div class="container">
+        <h1>View Clients</h1>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact Person</th>
+                    <th>Contact No</th>
+                    <th>Email Id</th>
+                    <th>Account Manager</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Company 1</td>
+                    <th>James</th>
+                    <th>982255555</th>
+                    <td>james@gmail.com</td>
+                    <td></td>
+                    <td>
+                        <a href="/account/recruiterprofile">Edit</a>
+                        {{#if isAdmin}}
+                        <a href="/account/assignmanager"> | Assing Account Manager</a>
+                        {{/if}}
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Company 2</td>
+                    <th>Tom</th>
+                    <th>982255555</th>
+                    <td>tom@gmail.com</td>
+                    <td>Peter</td>
+                    <td>
+                        <a href="/account/recruiterprofile">Edit</a>
+                        {{#if isAdmin}}
+                        <a href="/account/assignmanager"> | Assing Account Manager</a>
+                        {{/if}}
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

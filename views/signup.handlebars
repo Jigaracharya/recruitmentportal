@@ -3,10 +3,11 @@
     {{>header}}
 </head>
 <body>
-    {{>topmenu}}   <br><br><br>
+    {{>topmenu}}
     <div class="container-fluid">
-        <form class="form-register">
-            <h1>Create a account</h1>
+        <form class="form-register" method="post" action="/signup">
+            <h1>Create an account</h1>
+            {{{message}}}   
             <fieldset>
                 <div class="form-group">
                     <input type="text" class="form-control" name="full_name" placeholder="Full Name">
